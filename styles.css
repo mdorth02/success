@@ -28,28 +28,32 @@ time, mark, audio, video {
 }
 
 /*-------------------- ROOT VARIABLES --------------------*/
-h1, h2 {
+h1, 
+h2 {
     font-family: "Kavoon";
 }
 
-h3, h4, p {
+h3, 
+h4, 
+p, 
+a {
     font-family: "Inter";
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
-nav h2 {
-    font-size: 2em;
+h2 {
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 /*-------------------- COLORS --------------------*/
@@ -65,6 +69,123 @@ h4 {
 }
 
 /*-------------------- GLOBAL STYLES (mobile first/small) --------------------*/
+body {
+    background-color: var(--Purple);
+    color: var(--Dark-gray);
+}
+
+header {
+    background-color: var(--Lavender);
+    color: var(--White);
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1 {
+    padding: 1em;
+}
+
+header p {
+    background-color: var(--Pink);
+    padding: 20px 0 2px 0;
+    font-style: italic;
+    border-radius: 10px;
+    z-index: -2;
+}
+
+nav li:first-child {
+    display: none;
+}
+
+nav {
+    background-color: var(--Yellow);
+    width: 50%;
+    padding: 20px 5px 5px 5px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 710px;
+    bottom: 200px;
+
+}
+
+nav ul {
+    font-family: "Inter";
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: right;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--White);
+}
+
+a {
+    color: var(--Dark-gray);
+}
+
+h2 {
+    color: var(--White);
+}
+
+h3 {
+    color: var(--Yellow);
+}
+
+#choose {
+    background-color: var(--Pink);
+}
+
+#choose ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+table, th, td {
+    border: 1px solid var(--Yellow);
+    border-collapse: collapse;
+}
+
+table {
+    width: 20vw;
+}
+
+th {
+    background-color: var(--Yellow);
+}
+
+td {
+    background-color: var(--White);
+}
+
+#first-steps {
+    background-color: var(--Pink);
+    color: var(--White);
+}
+
+footer {
+    background-color: var(--Lavender);
+    color: var(--White);
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer a {
+    color: var(--White);
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------*/
 
